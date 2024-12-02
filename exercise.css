@@ -1,0 +1,69 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "box1 box2 box2 box3"
+        "box1 box2 box2 box3"
+        "box1 box4 box5 box3"
+        "box6 box4 box5 box3"
+        "box6 box7 box8 box8"
+        "box6 box7 box8 box8";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
+    gap: 5px;
+    width: 80%;
+    height: auto;
+}
+
+.box {
+    background-color: #cccccc;
+    border-radius: 8px;
+}
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}

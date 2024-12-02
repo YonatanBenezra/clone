@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer"; */
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 2 / span 4;
+    /* grid-area: header; */
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.sidebar {
+    grid-row: 1 / span 4;
+    grid-column: 1;
+    /* grid-area: sidebar; */
+    background-color: #212B42;
+    color: white;
+    padding: 1em;
+}
+
+.main {
+    grid-row: 2;
+    grid-column: 2 / span 4;
+    /* grid-area: main; */
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+.footer {
+    grid-row: 3;
+    grid-column: 2 / span 4;
+    /* grid-area: footer; */
+    background-color: #FF3B30;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Flexbox Layout inside Main */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    background-color: #f4f4f4;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.flex-item {
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    background-color: #FFC107;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

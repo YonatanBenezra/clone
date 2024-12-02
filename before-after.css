@@ -1,0 +1,13 @@
+.before-container {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+.before-container::before {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    background-color: plum;
+    content: "";
+}

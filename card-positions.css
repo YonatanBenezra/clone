@@ -1,0 +1,15 @@
+.card-container {
+    background-color: #ccc;
+    width: 20vw;
+    height: 20vw;
+}
+
+.percentage-container {
+    position: relative;
+    left: 14vw;
+    top: 1vw;
+    background-color: plum;
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+}
